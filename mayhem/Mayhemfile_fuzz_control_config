@@ -1,0 +1,10 @@
+project: savantenvs/TEESimulator
+target: fuzz_control_config
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_control_config/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_control_config
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_control_config/fuzz_control_config.dict
+    timeout: 5

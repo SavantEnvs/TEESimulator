@@ -1,0 +1,1 @@
+{"type": "config", "epoch": 42, "redactSalt": "c2FsdA==", "profiles": [{"id": "p1", "mode": "patch", "keyboxB64": "aGk=", "securityLevel": 2, "packages": ["com.a"], "uids": [1010]}]}

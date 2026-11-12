@@ -1,0 +1,10 @@
+project: savantenvs/TEESimulator
+target: fuzz_km_names
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_km_names/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_km_names
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_km_names/fuzz_km_names.dict
+    timeout: 5
